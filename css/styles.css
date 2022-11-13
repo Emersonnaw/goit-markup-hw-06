@@ -653,7 +653,7 @@ ul {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function:
-     cubic-bezier(0.4, 0, 0.2, 1);
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -664,7 +664,100 @@ ul {
 .footer-links-social:hover,
 .footer-links-social:focus {
     background-color: var(--accent-color);
-}   
+}  
+
+/* --------------------------
+ Footer FORM
+----------------------------- */
+/* .form-field {
+
+} */
+.form-label {
+    display:flex;
+    
+}
+.form-input {
+    margin-right: 12px;
+    padding-left: 16px;
+    min-width: 358px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+
+     
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+.form-input::placeholder {
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    height: 50px;
+    padding: 0px;
+    padding-left: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: var(--main-color-3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--main-color-4);
+    letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    
+}
+
+.telega-icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    fill: currentColor;
+    
+    
+}
+/* .form-text {
+
+    margin-bottom: 20px;
+    
+    font-style: normal;
+    font-weight: 700;
+     line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--main-color-4);
+} */
+
+
 /* ===========================
       MODAL WINDOW
    =========================== */
@@ -686,9 +779,10 @@ ul {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+    padding: 40px;
     min-width: 528px;
     min-height: 581px;
+
     border-radius: 4px;
     background-color: var(--main-color-4);
 }
@@ -707,7 +801,49 @@ ul {
     background-color: var(--main-color-4);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1);
+}   
+.modal-close-svg {
+    fill: currentColor;
 }
+.close-btn:hover,
+.close-btn:focus {
+    color:var(--main-color-3) ;
+}
+
+.modal-form-list {
+    
+}
+.modal-title {
+
+    margin-bottom: 12px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--main-color-1);
+
+}
+.title-field {
+    display: block;
+    margin-bottom: 4px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: var(--main-color-2);
+}
+
 /* ----------------
        PORTFOLIO
     ---------------- */
