@@ -12,7 +12,7 @@
     --focus-btn-hero :#188CE8;
     --bg-color-hiro:#C4C4C4;
     --social-icon-defolt-color: #AFB1B8;
-
+    
     
 }
 /* Background Header, Footer */
@@ -862,7 +862,7 @@ ul {
     color: var(--main-color-2);
    
     transition-property:color;
-    transition-duration: 2500ms;
+    transition-duration: 250ms;
     transition-timing-function:
     cubic-bezier(0.4, 0, 0.2, 1);
     
@@ -897,11 +897,15 @@ ul {
     /* outline: 2px solid blueviolet; */
 
     /* transform: translateY(-50%); */
-    fill:currentColor
+    fill:currentColor;
 
-   
-    
+    transition-property: color;
+    transition-duration:250ms ;
+    transition-timing-function:
+    cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
+
 .input-modal:focus-visible {
    outline: none;
 
